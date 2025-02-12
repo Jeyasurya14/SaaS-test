@@ -18,9 +18,10 @@ from django.contrib import admin
 from django.urls import path
 
 #Adding my views 
-from .views import Home
+from .views import page_visits, about_visits
 
 urlpatterns = [
-    path("", Home),
+    path('about/', about_visits),
+    path("", page_visits),
     path('admin/', admin.site.urls),
 ]
